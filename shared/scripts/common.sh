@@ -35,4 +35,4 @@ function fileExists {
 	fi
 }
 
-#echo "common loaded"
+echo "common loaded"

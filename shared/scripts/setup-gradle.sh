@@ -5,7 +5,8 @@ source "/home/asw/shared/scripts/common.sh"
 # set up Gradle constants 
 # https://services.gradle.org/distributions/gradle-5.4.1-bin.zip
 
-GRADLE_VERSION=5.4.1
+#GRADLE_VERSION=5.4.1
+GRADLE_VERSION=6.0.1
 
 GRADLE_ARCHIVE=gradle-${GRADLE_VERSION}-bin.zip
 # e.g., gradle-5.4.1-bin.zip
