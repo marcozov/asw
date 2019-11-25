@@ -10,6 +10,7 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.net.SocketException;
 import java.net.UnknownHostException;
+import java.util.Scanner;
 import java.util.logging.Logger;
 
 import asw.socket.service.RemoteCounterService;
@@ -31,34 +32,39 @@ public class ServiceClientTCPProxy implements RemoteCounterService {
 
 	@Override
 	public void incrementCounter() throws RemoteException {
-		
+		this.sendRequestAndGetReply("incrementCounter", "");
 	}
 
 
 	@Override
 	public int getGlobalCounter() throws RemoteException {
-		return 0;
+//		Scanner scanner = new Scanner(this.sendRequestAndGetReply("getGlobalCounter", ""));
+//		int result = scanner.nextInt();
+//		scanner.close();
+		int result = Integer.parseInt(this.sendRequestAndGetReply("getGlobalCounter", ""));
+		return result;
 	}
 
 
 	@Override
 	public int getSessionCounter() throws RemoteException {
-		return 0;
+		int result = Integer.parseInt(this.sendRequestAndGetReply("getSessionCounter", ""));
+		return result;
 	}
 
 
 	@Override
 	public void connect() throws RemoteException {
-		
+		String result = this.sendRequestAndGetReply("CONNECT", "");
 	}
 
 
 	@Override
 	public void disconnect() throws RemoteException {
-		
+		String result = this.sendRequestAndGetReply("DISCONNECT", "");
 	}
 	
-	private String sendRequestAndGetReply(String op, String arg) throws ServiceException, RemoteException {
+	private String sendRequestAndGetReply(String op, String arg) throws RemoteException {
 		String result = null;
 		Socket socket = null;
 		
@@ -79,17 +85,7 @@ public class ServiceClientTCPProxy implements RemoteCounterService {
 			logger.info("ServiceClientTCPProxy: received reply: " + reply);
      		logger.info("ServiceClientTCPProxy: " + op + "(" + arg + ") ==> " + reply);
      		
-     		if (reply.startsWith("#")) {
-        		/* Operation done successfully */
-        		result = reply.substring(1);
-        	} else if (reply.startsWith("@")) {
-        		/* ServiceException */
-        		String message = reply.substring(1);
-        		throw new ServiceException(message);
-        	} else {
-        		/* Bad syntax for reply: RemoteException */
-        		throw new RemoteException("Malformed reply: " + reply);
-        	}
+     		result = reply;
      		
 			socket.close();
 		} catch (UnknownHostException e) {

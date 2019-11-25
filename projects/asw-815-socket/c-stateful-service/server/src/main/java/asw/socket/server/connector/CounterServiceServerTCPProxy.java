@@ -25,6 +25,7 @@ public class CounterServiceServerTCPProxy {
 			socket.setSoTimeout(0);
 			
 			while(true) {
+				this.logger.info("ServiceServerTCPProxy: creating new client socket (and thread)");
 				Socket clientSocket = socket.accept();
 				ServantThread thread = new ServantThread(clientSocket, new CounterServant());
 				thread.start();
