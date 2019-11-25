@@ -1,0 +1,69 @@
+/* 
+ * Gradle build file per una semplice applicazione Java, mono-progetto. 
+ * 
+ * - gradle build compila, crea i jar e prepara la distribuzione 
+ * - gradle run manda in esecuzione l'applicazione 
+ * - gradle clean cancella i jar file e la distribuzione 
+ */ 
+ 
+subprojects {
+	apply plugin: 'java'
+	
+	repositories {
+	    mavenCentral()
+	}
+	
+	test {
+	    useJUnitPlatform()
+	}
+	
+	dependencies {
+	    // Use JUnit test framework
+	    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+	    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+	}
+}
+
+project(':service') {
+}
+
+project(':service-impl') {
+	dependencies {
+		compile project(':service')
+	}
+}
+
+project(':server') {
+	dependencies {
+		compile project(':service')
+		compile project(':service-impl')
+	}
+	
+	jar {
+		manifest {
+			attributes 'Main-Class': 'asw.socket.server.Server'
+			attributes 'Class-Path': 'service.jar service-impl.jar'
+		}
+	}
+
+	apply plugin: 'application'
+	mainClassName = "asw.socket.server.Server"
+	applicationDefaultJvmArgs = ["-Djava.util.logging.config.file=build/resources/main/logging.properties"]
+}
+
+project(':client') {
+	dependencies {
+		compile project(':service')
+	}
+	
+	jar {
+		manifest {
+			attributes 'Main-Class': 'asw.socket.main.Main'
+			attributes 'Class-Path': 'service.jar'
+		}
+	}
+
+	apply plugin: 'application'
+	mainClassName = "asw.socket.main.Main"
+	applicationDefaultJvmArgs = ["-Djava.util.logging.config.file=build/resources/main/logging.properties"]
+}
