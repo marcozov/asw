@@ -23,9 +23,7 @@ public class Client {
 			this.logger.info("********* [CLIENT] Using Service *********");
 			
 			this.logger.info("Client: service.connect()");
-			this.service.connect();
-			
-			
+			this.service.connect();			
 			
 			for (int i=0; i < 3; i++) {
 				this.logger.info("Client: service.getGlobaCounter() ==> " + this.service.getGlobalCounter());

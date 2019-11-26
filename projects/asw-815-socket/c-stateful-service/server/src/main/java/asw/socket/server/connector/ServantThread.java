@@ -6,7 +6,6 @@ import java.util.logging.Logger;
 
 import asw.socket.service.CounterService;
 import asw.socket.service.RemoteException;
-import asw.socket.service.ServiceException;
 
 public class ServantThread extends Thread {
 	private Logger logger = Logger.getLogger(this.getClass().getPackageName());
@@ -43,27 +42,30 @@ public class ServantThread extends Thread {
 				logger.info("Server Proxy: connection [" + servantThreadId + "]: received request: " + request);
 				String op = this.getOp(request);
 				String arg = this.getParam(request);
-				String reply = null;
+				String result = null;
 				
 				try {
-					reply = executeOperation(op, arg);
+					result = executeOperation(op, arg);
 				} catch (RemoteException e) {
 					// should NOT happen. But it happens if the format of request is wrong
-					reply = "";
+					result = "";
 				}
 				
+				String reply = result;
 				logger.info("Server Proxy: connection [" + servantThreadId + "]: sending reply: " + reply);
 				out.writeUTF(reply);
+				logger.info("Server Proxy: reply sent");
 			}
 		} catch (EOFException e) {
-			this.logger.info("Server Proxy: connection [" + servantThreadId + "]: EOFException: " + e.getMessage());
+//			this.logger.info("Server Proxy: connection [" + servantThreadId + "]: EOFException: " + e.getMessage());
+			e.printStackTrace();
 		} catch (IOException e) {
 			this.logger.info("Server Proxy: connection [" + servantThreadId + "]: IOException: " + e.getMessage());
 		} finally {
 			try {
 				clientSocket.close();
 			} catch (IOException e) {
-				this.logger.info("Server Proxy: connection [" + servantThreadId + "]: IOException: " + e.getMessage());
+				this.logger.info("Server Proxy: (closing) connection [" + servantThreadId + "]: IOException: " + e.getMessage());
 			}
 		}
 		this.logger.info("Server Proxy: closing connection [" + servantThreadId + "]");

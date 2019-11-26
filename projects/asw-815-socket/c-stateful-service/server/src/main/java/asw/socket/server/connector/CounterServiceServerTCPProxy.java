@@ -5,7 +5,6 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.logging.Logger;
 
-import asw.socket.service.Service;
 import asw.socket.service.impl.CounterServant;
 
 
@@ -25,8 +24,9 @@ public class CounterServiceServerTCPProxy {
 			socket.setSoTimeout(0);
 			
 			while(true) {
-				this.logger.info("ServiceServerTCPProxy: creating new client socket (and thread)");
+				this.logger.info("ServiceServerTCPProxy: creating new client socket (and thread)..");
 				Socket clientSocket = socket.accept();
+				this.logger.info("ServiceServerTCPProxy: created new client socket (and thread)..");
 				ServantThread thread = new ServantThread(clientSocket, new CounterServant());
 				thread.start();
 			}
