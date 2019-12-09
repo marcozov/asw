@@ -1,0 +1,33 @@
+/* 
+ * Gradle build file per una semplice applicazione Java, mono-progetto. 
+ * 
+ * - gradle build compila, crea i jar e prepara la distribuzione 
+ * - gradle run manda in esecuzione l'applicazione 
+ * - gradle clean cancella i jar file e la distribuzione 
+ */ 
+ 
+plugins {
+    id 'java'
+    id 'application'
+}
+repositories {
+    mavenCentral()
+}
+
+mainClassName = "asw.spring.show.Main"
+
+jar {
+	baseName = 'show'
+
+}
+
+test {
+	    useJUnitPlatform()
+	}
+	
+dependencies {
+    // Use JUnit test framework
+    implementation 'org.springframework:spring-context:5.2.1.RELEASE'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+}

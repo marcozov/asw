@@ -1,0 +1,6 @@
+# application.yml 
+---
+lucky: 
+  word: Default
+bad:
+  luck: Bad

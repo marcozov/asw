@@ -1,0 +1,21 @@
+<html>
+<body> 
+
+<h1>Get restaurants by location</h1> 
+
+<div>
+	<form th:action="@{/web/restaurantsByAttribute}" method="GET"
+	      th:object="${form}">
+		<input type="radio" name="attribute" value="">Name: <input type="text" th:field="*{name}" name="name" />
+		<input type="radio" name="attribute" value="">Location: <input type="text" th:field="*{location}" name="location" />
+		<input type="radio" name="attribute" value="">Founder: <input type="text" th:field="*{founder}" name="founder" />
+		<button type="submit">Find restaurants</button>
+	</form>
+</div>
+
+<p><a href="/web/restaurants">Restaurants list</a></p>
+<p><a href="/web/restaurants?add">Add a restaurant</a></p>
+<p><a href="/web/restaurants?get">Restaurant by location</a></p>
+										
+</body> 
+</html>
