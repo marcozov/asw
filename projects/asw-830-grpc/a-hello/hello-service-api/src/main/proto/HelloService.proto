@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "asw.grpc.hello.proto";
+option java_generic_services = true;
+
+
+// Il servizio HelloService. 
+service HelloService {
+  rpc sayHello(HelloRequest) returns (HelloReply) {}
+}
+
+// Il messaggio di richiesta contiene il nome.
+message HelloRequest {
+  string name = 1;
+}
+
+// Il messaggio di risposta contiene il saluto. 
+message HelloReply {
+  string greeting = 1;
+}

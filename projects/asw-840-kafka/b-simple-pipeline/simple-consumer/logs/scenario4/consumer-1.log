@@ -1,0 +1,187 @@
+2019-12-13 14:28:06.031  INFO 23147 --- [main] a.k.s.SimpleConsumerApplication          : Starting SimpleConsumerApplication on workstation with PID 23147 (/home/asw/projects/asw-840-kafka/a-simple-messaging/simple-consumer/build/classes/java/main started by vagrant in /home/asw/projects/asw-840-kafka/a-simple-messaging/simple-consumer)
+2019-12-13 14:28:06.038  INFO 23147 --- [main] a.k.s.SimpleConsumerApplication          : No active profile set, falling back to default profiles: default
+2019-12-13 14:28:07.109  INFO 23147 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [10.11.1.111:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2019-12-13 14:28:07.210  INFO 23147 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2019-12-13 14:28:07.212  INFO 23147 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2019-12-13 14:28:07.212  INFO 23147 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1576247287208
+2019-12-13 14:28:07.400  INFO 23147 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.11.1.111:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = G1
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2019-12-13 14:28:07.454  INFO 23147 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2019-12-13 14:28:07.457  INFO 23147 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2019-12-13 14:28:07.457  INFO 23147 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1576247287454
+2019-12-13 14:28:07.460  INFO 23147 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-1, groupId=G1] Subscribed to topic(s): asw.kafka.channel.beta
+2019-12-13 14:28:07.464  INFO 23147 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2019-12-13 14:28:07.489  INFO 23147 --- [main] a.k.s.SimpleConsumerApplication          : Started SimpleConsumerApplication in 1.954 seconds (JVM running for 2.446)
+2019-12-13 14:28:07.503  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-1, groupId=G1] Cluster ID: E-9BuV8sQ_mEt08umOiEPw
+2019-12-13 14:28:07.504  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=G1] Discovered group coordinator 10.11.1.111:9092 (id: 2147482646 rack: null)
+2019-12-13 14:28:07.507  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=G1] Revoking previously assigned partitions []
+2019-12-13 14:28:07.509  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : G1: partitions revoked: []
+2019-12-13 14:28:07.510  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=G1] (Re-)joining group
+2019-12-13 14:28:07.524  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=G1] (Re-)joining group
+2019-12-13 14:28:07.543  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=G1] Successfully joined group with generation 15
+2019-12-13 14:28:07.546  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=G1] Setting newly assigned partitions: asw.kafka.channel.beta-3, asw.kafka.channel.beta-2, asw.kafka.channel.beta-1, asw.kafka.channel.beta-0
+2019-12-13 14:28:07.560  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=G1] Setting offset for partition asw.kafka.channel.beta-3 to the committed offset FetchPosition{offset=8, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=10.11.1.111:9092 (id: 1001 rack: null), epoch=0}}
+2019-12-13 14:28:07.563  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=G1] Setting offset for partition asw.kafka.channel.beta-2 to the committed offset FetchPosition{offset=7, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=10.11.1.111:9092 (id: 1001 rack: null), epoch=0}}
+2019-12-13 14:28:07.564  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=G1] Setting offset for partition asw.kafka.channel.beta-1 to the committed offset FetchPosition{offset=7, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=10.11.1.111:9092 (id: 1001 rack: null), epoch=0}}
+2019-12-13 14:28:07.565  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=G1] Setting offset for partition asw.kafka.channel.beta-0 to the committed offset FetchPosition{offset=8, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=10.11.1.111:9092 (id: 1001 rack: null), epoch=0}}
+2019-12-13 14:28:07.578  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : G1: partitions assigned: [asw.kafka.channel.beta-3, asw.kafka.channel.beta-2, asw.kafka.channel.beta-1, asw.kafka.channel.beta-0]
+2019-12-13 14:28:34.441  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 3, leaderEpoch = 0, offset = 8, CreateTime = 1576247314234, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #2)
+2019-12-13 14:28:34.450  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #2
+2019-12-13 14:28:34.464  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 3, leaderEpoch = 0, offset = 9, CreateTime = 1576247314243, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #6)
+2019-12-13 14:28:34.465  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #6
+2019-12-13 14:28:34.466  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 3, leaderEpoch = 0, offset = 10, CreateTime = 1576247314246, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #0)
+2019-12-13 14:28:34.467  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #0
+2019-12-13 14:28:34.469  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 3, leaderEpoch = 0, offset = 11, CreateTime = 1576247314297, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #4)
+2019-12-13 14:28:34.480  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #4
+2019-12-13 14:28:34.482  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 3, leaderEpoch = 0, offset = 12, CreateTime = 1576247314312, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #8)
+2019-12-13 14:28:34.483  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #8
+2019-12-13 14:28:34.485  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 2, leaderEpoch = 0, offset = 7, CreateTime = 1576247314236, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #3)
+2019-12-13 14:28:34.489  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #3
+2019-12-13 14:28:34.491  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 2, leaderEpoch = 0, offset = 8, CreateTime = 1576247314258, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #7)
+2019-12-13 14:28:34.493  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #7
+2019-12-13 14:28:34.495  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 2, leaderEpoch = 0, offset = 9, CreateTime = 1576247314285, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #1)
+2019-12-13 14:28:34.498  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #1
+2019-12-13 14:28:34.503  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 2, leaderEpoch = 0, offset = 10, CreateTime = 1576247314299, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #5)
+2019-12-13 14:28:34.508  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #5
+2019-12-13 14:28:34.514  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 2, leaderEpoch = 0, offset = 11, CreateTime = 1576247314323, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #9)
+2019-12-13 14:28:34.515  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #9
+2019-12-13 14:28:34.520  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 1, leaderEpoch = 0, offset = 7, CreateTime = 1576247314213, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #0)
+2019-12-13 14:28:34.521  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #0
+2019-12-13 14:28:34.525  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 1, leaderEpoch = 0, offset = 8, CreateTime = 1576247314240, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #4)
+2019-12-13 14:28:34.526  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #4
+2019-12-13 14:28:34.527  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 1, leaderEpoch = 0, offset = 9, CreateTime = 1576247314259, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #8)
+2019-12-13 14:28:34.527  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #8
+2019-12-13 14:28:34.528  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 1, leaderEpoch = 0, offset = 10, CreateTime = 1576247314291, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #2)
+2019-12-13 14:28:34.528  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #2
+2019-12-13 14:28:34.528  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 1, leaderEpoch = 0, offset = 11, CreateTime = 1576247314301, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #6)
+2019-12-13 14:28:34.528  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #6
+2019-12-13 14:28:34.529  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 0, leaderEpoch = 0, offset = 8, CreateTime = 1576247314231, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #1)
+2019-12-13 14:28:34.529  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #1
+2019-12-13 14:28:34.530  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 0, leaderEpoch = 0, offset = 9, CreateTime = 1576247314241, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #5)
+2019-12-13 14:28:34.530  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #5
+2019-12-13 14:28:34.530  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 0, leaderEpoch = 0, offset = 10, CreateTime = 1576247314262, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #9)
+2019-12-13 14:28:34.531  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #9
+2019-12-13 14:28:34.548  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 0, leaderEpoch = 0, offset = 11, CreateTime = 1576247314294, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #3)
+2019-12-13 14:28:34.556  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #3
+2019-12-13 14:28:34.558  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.m.SimpleMessageListener            : MESSAGE LISTENER: ConsumerRecord(topic = asw.kafka.channel.beta, partition = 0, leaderEpoch = 0, offset = 12, CreateTime = 1576247314311, serialized key size = -1, serialized value size = 12, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = Message #7)
+2019-12-13 14:28:34.559  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.k.s.domain.SimpleConsumerService       : RECEIVED MESSAGE: Message #7
+2019-12-13 14:29:06.911  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=G1] Member consumer-1-ac313bb8-461b-4d7d-9202-6c7b7291515d sending LeaveGroup request to coordinator 10.11.1.111:9092 (id: 2147482646 rack: null)
+2019-12-13 14:29:06.913  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-1, groupId=G1] Unsubscribed all topics or patterns and assigned partitions
+2019-12-13 14:29:06.914  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2019-12-13 14:29:06.923  INFO 23147 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : G1: Consumer stopped

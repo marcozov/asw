@@ -1,0 +1,276 @@
+2019-12-13 13:54:48.504  INFO 20776 --- [main] a.k.s.SimpleProducerApplication          : Starting SimpleProducerApplication on workstation with PID 20776 (/home/asw/projects/asw-840-kafka/a-simple-messaging/simple-producer/build/classes/java/main started by vagrant in /home/asw/projects/asw-840-kafka/a-simple-messaging/simple-producer)
+2019-12-13 13:54:48.509  INFO 20776 --- [main] a.k.s.SimpleProducerApplication          : No active profile set, falling back to default profiles: default
+2019-12-13 13:54:49.492  INFO 20776 --- [main] a.k.s.SimpleProducerApplication          : Started SimpleProducerApplication in 1.464 seconds (JVM running for 1.949)
+2019-12-13 13:54:49.497  INFO 20776 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #0
+2019-12-13 13:54:49.499  INFO 20776 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #0 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 13:54:49.517  INFO 20776 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [10.11.1.111:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2019-12-13 13:54:49.630  INFO 20776 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2019-12-13 13:54:49.632  INFO 20776 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2019-12-13 13:54:49.632  INFO 20776 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1576245289628
+2019-12-13 13:54:49.833  INFO 20776 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: E-9BuV8sQ_mEt08umOiEPw
+2019-12-13 13:54:49.854  INFO 20776 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #1
+2019-12-13 13:54:49.855  INFO 20776 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #1 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 13:54:49.856  INFO 20776 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #2
+2019-12-13 13:54:49.857  INFO 20776 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #2 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 13:54:49.858  INFO 20776 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #3
+2019-12-13 13:54:49.858  INFO 20776 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #3 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 13:54:49.859  INFO 20776 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #4
+2019-12-13 13:54:49.860  INFO 20776 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #4 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 13:54:49.860  INFO 20776 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #5
+2019-12-13 13:54:49.861  INFO 20776 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #5 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 13:54:49.862  INFO 20776 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #6
+2019-12-13 13:54:49.862  INFO 20776 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #6 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 13:54:49.863  INFO 20776 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #7
+2019-12-13 13:54:49.863  INFO 20776 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #7 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 13:54:49.865  INFO 20776 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #8
+2019-12-13 13:54:49.866  INFO 20776 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #8 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 13:54:49.867  INFO 20776 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #9
+2019-12-13 13:54:49.867  INFO 20776 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #9 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 13:54:49.874  INFO 20776 --- [SpringContextShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2019-12-13 14:05:46.792  INFO 21649 --- [main] a.k.s.SimpleProducerApplication          : Starting SimpleProducerApplication on workstation with PID 21649 (/home/asw/projects/asw-840-kafka/a-simple-messaging/simple-producer/build/classes/java/main started by vagrant in /home/asw/projects/asw-840-kafka/a-simple-messaging/simple-producer)
+2019-12-13 14:05:46.799  INFO 21649 --- [main] a.k.s.SimpleProducerApplication          : No active profile set, falling back to default profiles: default
+2019-12-13 14:05:47.811  INFO 21649 --- [main] a.k.s.SimpleProducerApplication          : Started SimpleProducerApplication in 1.489 seconds (JVM running for 2.016)
+2019-12-13 14:05:47.814  INFO 21649 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #0
+2019-12-13 14:05:47.815  INFO 21649 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #0 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:05:47.832  INFO 21649 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [10.11.1.111:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2019-12-13 14:05:47.956  INFO 21649 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2019-12-13 14:05:47.957  INFO 21649 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2019-12-13 14:05:47.958  INFO 21649 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1576245947951
+2019-12-13 14:05:48.113  INFO 21649 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: E-9BuV8sQ_mEt08umOiEPw
+2019-12-13 14:05:48.134  INFO 21649 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #1
+2019-12-13 14:05:48.135  INFO 21649 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #1 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:05:48.136  INFO 21649 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #2
+2019-12-13 14:05:48.137  INFO 21649 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #2 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:05:48.138  INFO 21649 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #3
+2019-12-13 14:05:48.139  INFO 21649 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #3 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:05:48.140  INFO 21649 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #4
+2019-12-13 14:05:48.141  INFO 21649 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #4 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:05:48.141  INFO 21649 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #5
+2019-12-13 14:05:48.142  INFO 21649 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #5 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:05:48.145  INFO 21649 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #6
+2019-12-13 14:05:48.146  INFO 21649 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #6 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:05:48.147  INFO 21649 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #7
+2019-12-13 14:05:48.147  INFO 21649 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #7 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:05:48.148  INFO 21649 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #8
+2019-12-13 14:05:48.148  INFO 21649 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #8 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:05:48.149  INFO 21649 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #9
+2019-12-13 14:05:48.149  INFO 21649 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #9 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:05:48.161  INFO 21649 --- [SpringContextShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2019-12-13 14:06:06.639  INFO 21739 --- [main] a.k.s.SimpleProducerApplication          : Starting SimpleProducerApplication on workstation with PID 21739 (/home/asw/projects/asw-840-kafka/a-simple-messaging/simple-producer/build/classes/java/main started by vagrant in /home/asw/projects/asw-840-kafka/a-simple-messaging/simple-producer)
+2019-12-13 14:06:06.644  INFO 21739 --- [main] a.k.s.SimpleProducerApplication          : No active profile set, falling back to default profiles: default
+2019-12-13 14:06:07.639  INFO 21739 --- [main] a.k.s.SimpleProducerApplication          : Started SimpleProducerApplication in 1.496 seconds (JVM running for 1.961)
+2019-12-13 14:06:07.642  INFO 21739 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #0
+2019-12-13 14:06:07.643  INFO 21739 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #0 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:06:07.660  INFO 21739 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [10.11.1.111:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2019-12-13 14:06:07.779  INFO 21739 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2019-12-13 14:06:07.780  INFO 21739 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2019-12-13 14:06:07.781  INFO 21739 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1576245967775
+2019-12-13 14:06:07.958  INFO 21739 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: E-9BuV8sQ_mEt08umOiEPw
+2019-12-13 14:06:07.985  INFO 21739 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #1
+2019-12-13 14:06:07.986  INFO 21739 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #1 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:06:07.987  INFO 21739 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #2
+2019-12-13 14:06:07.988  INFO 21739 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #2 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:06:07.989  INFO 21739 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #3
+2019-12-13 14:06:07.990  INFO 21739 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #3 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:06:07.991  INFO 21739 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #4
+2019-12-13 14:06:07.991  INFO 21739 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #4 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:06:07.993  INFO 21739 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #5
+2019-12-13 14:06:07.994  INFO 21739 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #5 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:06:07.995  INFO 21739 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #6
+2019-12-13 14:06:07.995  INFO 21739 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #6 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:06:07.996  INFO 21739 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #7
+2019-12-13 14:06:07.996  INFO 21739 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #7 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:06:07.997  INFO 21739 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #8
+2019-12-13 14:06:07.998  INFO 21739 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #8 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:06:07.998  INFO 21739 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #9
+2019-12-13 14:06:07.999  INFO 21739 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #9 ON CHANNEL: asw.kafka.channel.beta
+2019-12-13 14:06:08.003  INFO 21739 --- [SpringContextShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.

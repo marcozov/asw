@@ -1,0 +1,2 @@
+2019-12-13 10:03:49.060  INFO 13053 --- [main] a.k.s.SimpleProducerApplication          : Starting SimpleProducerApplication on workstation with PID 13053 (/home/asw/projects/asw-840-kafka/a-simple-messaging/simple-producer/build/classes/java/main started by vagrant in /home/asw/projects/asw-840-kafka/a-simple-messaging/simple-producer)
+2019-12-13 10:03:49.066  INFO 13053 --- [main] a.k.s.SimpleProducerApplication          : No active profile set, falling back to default profiles: default

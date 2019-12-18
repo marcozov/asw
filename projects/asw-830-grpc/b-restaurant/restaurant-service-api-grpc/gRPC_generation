@@ -1,0 +1,2 @@
+protoc --plugin=protoc-gen-grpc-java=/d/tools/protoc-3.11.1-win64/bin/protoc-gen-grpc-java --proto_path=src/main/proto/ --grpc-java_out=build/generated/source/proto/main/grpc RestaurantService.proto
+protoc --proto_path=src/main/proto/ --java_out=build/generated/source/proto/main/java src/main/proto/RestaurantService.proto
