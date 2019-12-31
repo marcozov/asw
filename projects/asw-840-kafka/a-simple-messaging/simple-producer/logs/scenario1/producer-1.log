@@ -1,9 +1,9 @@
-2019-12-13 09:37:31.746  INFO 10744 --- [main] a.k.s.SimpleProducerApplication          : Starting SimpleProducerApplication on workstation with PID 10744 (/home/asw/projects/asw-840-kafka/a-simple-messaging/simple-producer/build/classes/java/main started by vagrant in /home/asw/projects/asw-840-kafka/a-simple-messaging/simple-producer)
-2019-12-13 09:37:31.752  INFO 10744 --- [main] a.k.s.SimpleProducerApplication          : No active profile set, falling back to default profiles: default
-2019-12-13 09:37:32.989  INFO 10744 --- [main] a.k.s.SimpleProducerApplication          : Started SimpleProducerApplication in 1.868 seconds (JVM running for 2.473)
-2019-12-13 09:37:32.993  INFO 10744 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #0
-2019-12-13 09:37:32.995  INFO 10744 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #0 ON CHANNEL: asw.kafka.channel.beta
-2019-12-13 09:37:33.014  INFO 10744 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+2019-12-19 13:04:37.555  INFO 6105 --- [main] a.k.s.SimpleProducerApplication          : Starting SimpleProducerApplication on workstation with PID 6105 (/home/asw/projects/asw-840-kafka/a-simple-messaging/simple-producer/build/classes/java/main started by vagrant in /home/asw/projects/asw-840-kafka/a-simple-messaging/simple-producer)
+2019-12-19 13:04:37.575  INFO 6105 --- [main] a.k.s.SimpleProducerApplication          : No active profile set, falling back to default profiles: default
+2019-12-19 13:04:39.019  INFO 6105 --- [main] a.k.s.SimpleProducerApplication          : Started SimpleProducerApplication in 2.177 seconds (JVM running for 3.034)
+2019-12-19 13:04:39.022  INFO 6105 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #0
+2019-12-19 13:04:39.023  INFO 6105 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #0 ON CHANNEL: asw.kafka.channel.beta
+2019-12-19 13:04:39.049  INFO 6105 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
 	acks = 1
 	batch.size = 16384
 	bootstrap.servers = [10.11.1.111:9092]
@@ -67,26 +67,26 @@
 	transactional.id = null
 	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
 
-2019-12-13 09:37:33.174  INFO 10744 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
-2019-12-13 09:37:33.176  INFO 10744 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
-2019-12-13 09:37:33.177  INFO 10744 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1576229853172
-2019-12-13 09:37:33.343  INFO 10744 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: k7hJIWW8RW2qLDfQrdboSg
-2019-12-13 09:37:33.367  INFO 10744 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #1
-2019-12-13 09:37:33.368  INFO 10744 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #1 ON CHANNEL: asw.kafka.channel.beta
-2019-12-13 09:37:33.369  INFO 10744 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #2
-2019-12-13 09:37:33.370  INFO 10744 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #2 ON CHANNEL: asw.kafka.channel.beta
-2019-12-13 09:37:33.371  INFO 10744 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #3
-2019-12-13 09:37:33.372  INFO 10744 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #3 ON CHANNEL: asw.kafka.channel.beta
-2019-12-13 09:37:33.376  INFO 10744 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #4
-2019-12-13 09:37:33.377  INFO 10744 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #4 ON CHANNEL: asw.kafka.channel.beta
-2019-12-13 09:37:33.379  INFO 10744 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #5
-2019-12-13 09:37:33.379  INFO 10744 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #5 ON CHANNEL: asw.kafka.channel.beta
-2019-12-13 09:37:33.384  INFO 10744 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #6
-2019-12-13 09:37:33.385  INFO 10744 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #6 ON CHANNEL: asw.kafka.channel.beta
-2019-12-13 09:37:33.388  INFO 10744 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #7
-2019-12-13 09:37:33.396  INFO 10744 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #7 ON CHANNEL: asw.kafka.channel.beta
-2019-12-13 09:37:33.401  INFO 10744 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #8
-2019-12-13 09:37:33.402  INFO 10744 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #8 ON CHANNEL: asw.kafka.channel.beta
-2019-12-13 09:37:33.404  INFO 10744 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #9
-2019-12-13 09:37:33.404  INFO 10744 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #9 ON CHANNEL: asw.kafka.channel.beta
-2019-12-13 09:37:33.413  INFO 10744 --- [SpringContextShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2019-12-19 13:04:39.212  INFO 6105 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2019-12-19 13:04:39.214  INFO 6105 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2019-12-19 13:04:39.215  INFO 6105 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1576760679210
+2019-12-19 13:04:39.449  INFO 6105 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: da5-3V_GTR6QQ3yc7gtt2Q
+2019-12-19 13:04:39.483  INFO 6105 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #1
+2019-12-19 13:04:39.483  INFO 6105 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #1 ON CHANNEL: asw.kafka.channel.beta
+2019-12-19 13:04:39.485  INFO 6105 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #2
+2019-12-19 13:04:39.485  INFO 6105 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #2 ON CHANNEL: asw.kafka.channel.beta
+2019-12-19 13:04:39.486  INFO 6105 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #3
+2019-12-19 13:04:39.487  INFO 6105 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #3 ON CHANNEL: asw.kafka.channel.beta
+2019-12-19 13:04:39.488  INFO 6105 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #4
+2019-12-19 13:04:39.489  INFO 6105 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #4 ON CHANNEL: asw.kafka.channel.beta
+2019-12-19 13:04:39.492  INFO 6105 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #5
+2019-12-19 13:04:39.493  INFO 6105 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #5 ON CHANNEL: asw.kafka.channel.beta
+2019-12-19 13:04:39.494  INFO 6105 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #6
+2019-12-19 13:04:39.494  INFO 6105 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #6 ON CHANNEL: asw.kafka.channel.beta
+2019-12-19 13:04:39.496  INFO 6105 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #7
+2019-12-19 13:04:39.498  INFO 6105 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #7 ON CHANNEL: asw.kafka.channel.beta
+2019-12-19 13:04:39.508  INFO 6105 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #8
+2019-12-19 13:04:39.509  INFO 6105 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #8 ON CHANNEL: asw.kafka.channel.beta
+2019-12-19 13:04:39.510  INFO 6105 --- [main] c.k.s.domain.SimpleProducerService       : PUBLISHING MESSAGE: Message #9
+2019-12-19 13:04:39.510  INFO 6105 --- [main] c.k.s.m.SimpleMessagePublisherImpl       : PUBLISHING MESSAGE: Message #9 ON CHANNEL: asw.kafka.channel.beta
+2019-12-19 13:04:39.517  INFO 6105 --- [SpringContextShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.

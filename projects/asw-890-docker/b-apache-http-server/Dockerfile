@@ -1,0 +1,9 @@
+FROM ubuntu:16.04
+
+RUN apt-get update && apt-get install -y apache2
+
+ENV APACHE_LOG_DIR /var/log/apache2
+VOLUME /var/www/html
+EXPOSE 80
+
+ENTRYPOINT ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]

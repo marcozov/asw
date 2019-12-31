@@ -25,8 +25,8 @@ public class RestaurantCommandListener {
 
 	@KafkaListener(topics = RestaurantServiceCommandChannel.channel)
  public void listen(ConsumerRecord<String, Command> record) throws Exception {
-     // logger.info("MESSAGE LISTENER: " + record.toString());
-     Command command = record.value();
-		restaurantCommandHandler.onCommand(command); 
+    // logger.info("MESSAGE LISTENER: " + record.toString());
+    Command command = record.value();
+	restaurantCommandHandler.onCommand(command); 
  }
 }
