@@ -1,0 +1,7 @@
+FROM openjdk:8-jdk 
+
+ADD build/libs/hello.jar hello.jar
+
+EXPOSE 8080
+
+ENTRYPOINT ["/usr/bin/java", "-Xmx128m", "-Xms128m", "-jar", "hello.jar"]
